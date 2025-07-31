@@ -8,11 +8,8 @@
 #ifndef ZCONF_H
 #define ZCONF_H
 
-
-#ifdef __APPLE__
-/* use wxWidgets' configure */
+/* use wxWidgets' configure results, notable HAVE_UNISTD_H */
 #include "wx/setup.h"
-#endif
 
 /* wxWidgets always uses custom prefix to avoid conflicts. */
 #define Z_PREFIX_ wx_zlib_
